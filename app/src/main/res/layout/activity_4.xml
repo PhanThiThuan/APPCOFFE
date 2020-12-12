@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#ffcd7a"
+        android:padding="5dp">
+        <Button
+            android:id="@+id/menutb"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/ic_menutb" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Notifications"
+            android:fontFamily="@font/lobster"
+            android:textColor="#0000FF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/tb"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ic_tb" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listviewtb"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:dividerHeight="1dp"
+        android:background="#CDAD00"
+        ></ListView>
+</LinearLayout>

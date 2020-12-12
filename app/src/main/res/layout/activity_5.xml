@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:weightSum="10"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/at5"
+    android:background="#CDAD00"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_user"
+            app:civ_border_width="2dp"
+            android:layout_marginLeft="15dp"
+            android:layout_alignParentLeft="true"
+            app:civ_border_color="#fff"/>
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="85dp"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#0000FF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The Coffee House"></TextView>
+        <TextView
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="85dp"
+            android:textSize="20sp"
+            android:text="Newbie"
+            android:textColor="#0000FF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ></TextView>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listviewCauthu"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"></ListView>
+</LinearLayout>

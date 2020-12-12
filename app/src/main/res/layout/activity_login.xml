@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:weightSum="10"
+    android:orientation="vertical"
+    android:background="#CDAD00"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_weight="4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/pacifico"
+            android:text="The \nCoffee"
+            android:textColor="#FF0000"
+            android:textSize="60sp"
+            android:textStyle="italic"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:textStyle="bold"
+            android:layout_alignParentBottom="true"
+            android:textSize="30sp"
+            android:textColor="#0000FF"></TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+
+            android:weightSum="6">
+            <EditText
+                android:drawableLeft="@drawable/ic_username"
+                android:layout_weight="2"
+                android:hint="User Name"
+                android:textColorHint="#0000FF"
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></EditText>
+            <EditText
+                android:textColorHint="#0000FF"
+                android:id="@+id/password"
+                android:drawableLeft="@drawable/ic_userpass"
+                android:layout_weight="2"
+                android:layout_below="@+id/username"
+                android:hint="Pass Words"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></EditText>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp">
+        <Button
+            android:textColor="#0000FF"
+            android:layout_marginTop="5dp"
+            android:id="@+id/signinbt"
+            android:background="@drawable/buyanotherbtn"
+            android:text="Sign In"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Button>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+        <TextView
+            android:layout_above="@+id/su"
+            android:id="@+id/fg"
+            android:textSize="15sp"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textColor="#ffcd7a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot your password ?"></TextView>
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:id="@+id/su"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:layout_alignParentBottom="true"
+            android:textColor="#0000FF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have account ? sign up"></TextView>
+    </RelativeLayout>
+</LinearLayout>
